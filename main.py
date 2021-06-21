@@ -1,9 +1,14 @@
-from utils import compare, getRevenueGrowth
+from utils import sCompare, yCompare
 import yfinance as yf
 import json
 
-tickerStr = ['NOW', 'DOCU', 'TWLO', 'WDAY', 'SQ', 'Z', 'PTON']
-print(compare(tickerStr))
+#nowTicker = yf.Ticker('NOW')
+
+tickerList = ['NOW']
+#print(yCompare(tickerList, 534.75))
+print(sCompare(tickerList, 534.75))
+
+#print(nowTicker.info['previousClose'])
 
 #growth = getRevenueGrowth('SQ')
 #print('{:.2%}'.format(growth))
